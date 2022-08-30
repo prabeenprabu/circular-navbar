@@ -39,8 +39,6 @@ body {
 
 .active li {
     transform: rotate(calc(360deg / 8 * var(--i)));
-    background-color: tomato;
-    border-radius: 50%;
 }
 .menu li a {
     font-size: 35px;
@@ -75,4 +73,28 @@ body {
 
 .active .toggle {
     transform: rotate(315deg);
+}
+
+/* ------------------media quries------------ */
+@media screen and (max-width: 1024px) {
+    .menu {
+        width: 240px;
+        height: 240px;
+    }
+    .menu li {
+        transform: translate(110px);
+        transform-origin: 120px;
+    }
+    .toggle {
+        width: 80px;
+        height: 80px;
+        font-size: 60px;
+    }
+    .menu li a {
+        width: 50px;
+        height: 50px;
+    }
+    .active li {
+        transform: rotate(calc(360deg / 8 * var(--i)));
+    }
 }
